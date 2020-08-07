@@ -1,0 +1,36 @@
+// Practicing writing and compiling a program
+
+#include <iostream>
+#include <iomanip>
+#include <fstream>
+#include <sstream>
+#include <cstdlib>
+#include <list>
+#include <forward_list>
+#include <unordered_map>
+#include <array>
+#include <regex>
+#include <random>
+#include <stdexcept>
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <cmath>
+#include "std_lib_facilities.h"
+
+using namespace std;
+
+
+
+int main()
+{
+	cout << "Enter a distance in miles and it will be converted into kilometers:\n";
+		double miles = 0;
+		cin >> miles;
+
+		double kilometers;
+		kilometers = miles * 1.609;
+
+	cout << miles << " miles is " << kilometers << " kilometers";
+
+}
