@@ -1,0 +1,78 @@
+// Practicing writing and compiling a program
+
+#include <iostream>
+#include <iomanip>
+#include <fstream>
+#include <sstream>
+#include <cstdlib>
+#include <list>
+#include <forward_list>
+#include <unordered_map>
+#include <array>
+#include <regex>
+#include <random>
+#include <stdexcept>
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <cmath>
+#include "std_lib_facilities.h"
+
+using namespace std;
+
+
+
+int main()
+{
+
+    cout << "Enter three integer values\n";
+    int x;
+    int y;
+    int z;
+
+    int small = 0;
+    int medium = 0;
+    int large = 0;
+
+    cin >> x >> y >> z;
+
+	if(x<y && x<z){
+		small = x;
+
+		if(y<z){
+			medium = y;
+			large = z;
+		}
+		else {
+			medium = z;
+			large = y;
+		  }
+	} else if(y<z){
+		small = y;
+
+	    if(x<z){
+		medium = x;
+	    large = z;
+	    }
+	    else {
+	    medium = z;
+	    large = x;
+	    }
+
+
+	} else {
+		small = z;
+
+		if(x<y){
+		medium = x;
+		large =y;
+		}
+		else {
+		medium =y;
+		large =x;
+		}
+
+	}
+
+    cout << small << ", " << medium << ", " << large;
+}
