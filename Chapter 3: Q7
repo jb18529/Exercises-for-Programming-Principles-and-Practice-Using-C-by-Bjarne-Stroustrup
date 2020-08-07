@@ -1,0 +1,86 @@
+#include <iostream>
+#include <iomanip>
+#include <fstream>
+#include <sstream>
+#include <cstdlib>
+#include <list>
+#include <forward_list>
+#include <unordered_map>
+#include <array>
+#include <regex>
+#include <random>
+#include <stdexcept>
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <cmath>
+#include "std_lib_facilities.h"
+
+using namespace std;
+
+
+
+int main()
+{
+		cout << "Enter three names: \n";
+		string a;
+		string b;
+		string c;
+
+		string small = "?";
+		string medium = "?";
+		string large = "?";
+
+		cin >> a >> b >> c;
+
+		if(a < b && a < c) {
+
+				small = a;
+
+				if(b < c) {
+
+						medium = b;
+						large = c;
+
+				}
+				else {
+
+						medium = c;
+						large = b;
+				}
+
+		}
+		else if(c < b) {
+
+				small = c;
+
+				if(a < b) {
+
+						medium = a;
+						large = b;
+
+				}
+				else {
+						medium = b;
+						large = a;
+				}
+		}
+		else {
+				small = b;
+
+				if(c < a) {
+
+						medium = c;
+						large = a;
+
+				}
+				else {
+						medium = a;
+						large = c;
+				}
+		}
+
+		cout << "The three names in alphabetic order: " << small << ", " << medium << ", " << large;
+
+
+}
