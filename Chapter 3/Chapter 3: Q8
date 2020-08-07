@@ -1,0 +1,56 @@
+#include <iostream>
+#include <iomanip>
+#include <fstream>
+#include <sstream>
+#include <cstdlib>
+#include <list>
+#include <forward_list>
+#include <unordered_map>
+#include <array>
+#include <regex>
+#include <random>
+#include <stdexcept>
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <cmath>
+#include "std_lib_facilities.h"
+
+using namespace std;
+
+// Program to test an integer value to determine if it is odd or even and prevent entering non integer values
+
+int main(){
+
+		cout << "Enter an integer value: ";
+		int n = 2;
+
+		cin >> n;
+
+		while ( n == 1 || n == 2 || cin.fail()) {
+
+				cin.clear();
+				cin.ignore(INT_MAX, '\n');
+				cout << "Please, enter only an integer number! \n";
+				cin >> n; // must enter the input expression statement in order for loop to complete or program will continue "The value of " and execute n==1 statement
+
+		}
+
+		cout << "The value of " << n;
+
+		n = (n % 2) + 1;
+
+		if (n == 2) {
+
+				cout << " is an odd number.";
+
+		}
+		else if(n == 1){
+
+				cout << " is an even number.";
+
+		}
+
+
+
+}
