@@ -1,4 +1,4 @@
-// Practicing writing and compiling a program
+// Enter three integer values and output them in ascending order
 
 #include <iostream>
 #include <iomanip>
