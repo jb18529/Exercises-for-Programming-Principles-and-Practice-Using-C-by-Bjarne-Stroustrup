@@ -19,7 +19,7 @@
 using namespace std;
 
 
-
+// Test an integer value to determine if it is odd or even
 int main()
 {
 		cout << "Enter three names: \n";
