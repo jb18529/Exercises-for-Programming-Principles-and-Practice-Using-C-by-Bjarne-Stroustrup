@@ -1,4 +1,4 @@
-// Practicing writing and compiling a program
+// Convert from miles to kilometers
 
 #include <iostream>
 #include <iomanip>
