@@ -1,0 +1,38 @@
+#include <iostream>
+
+#include "std_lib_facilities.h"
+
+using namespace std;
+
+//Write a program that converts written form of number to digits only from 0-4
+
+int main(){
+
+	cout << "Enter a number form 0-4 in words and the digit form of that number will be produced: \n";
+	string number;
+	string word;
+	cin >> word;
+
+	if (word == "zero") {
+		number = "0";
+	}
+	else if(word == "one") {
+		number = "1";
+	}
+	else if(word == "two") {
+		number = "2";
+	}
+	else if(word == "three") {
+		number = "3";
+	}
+	else if(word == "four") {
+		number = "4";
+	}
+	else
+		number = "not a number I know!";
+
+	cout << "Your number is " << number << "\n";
+
+
+
+}
