@@ -3,8 +3,7 @@
 
 using namespace std;
 
-// Program to test an integer value to determine if it is odd or even and prevent entering non integer values
-
+// Program that allows you to enter an operation and two operands and returns results
 int main(){
 
 	cout << "Enter the operation you want followed by the two values you wish to use: \n";
