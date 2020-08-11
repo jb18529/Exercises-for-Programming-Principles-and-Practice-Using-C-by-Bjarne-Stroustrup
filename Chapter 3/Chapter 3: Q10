@@ -1,0 +1,36 @@
+#include <iostream>
+#include "std_lib_facilities.h"
+
+using namespace std;
+
+// Program to test an integer value to determine if it is odd or even and prevent entering non integer values
+
+int main(){
+
+	cout << "Enter the operation you want followed by the two values you wish to use: \n";
+
+	string operation;
+	double val1;
+	double val2;
+	double result = 0;
+	cin >> operation >> val1 >> val2;
+
+	if(operation == "+" || operation == "add")
+		result = val1 + val2;
+	else if(operation == "-" || operation == "minus")
+		result = val1 - val2;
+	else if(operation == "*")
+		result = val1 * val2;
+	else if(operation == "/")
+		result = val1 / val2;
+
+
+
+
+
+
+	cout << "The answer to you operation is: " << result << "\n";
+
+
+
+}
