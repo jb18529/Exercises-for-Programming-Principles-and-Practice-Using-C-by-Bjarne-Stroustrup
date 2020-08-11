@@ -1,0 +1,74 @@
+#include <iostream>
+#include "std_lib_facilities.h"
+
+using namespace std;
+
+// Program that allows users to enter in number of pennies, nickels, dimes, quarters, half dollars and dollars and calculates the number of eac
+
+int main(){
+
+	int n_penn;
+	int n_nick;
+	int n_dime;
+	int n_quar;
+	int n_half;
+	int n_doll;
+	cout << "Count how many of each coin you have and enter the number of \n";
+
+	cout << "pennies: ";
+	cin >> n_penn;
+
+	cout << "nickels: ";
+	cin >> n_nick;
+
+	cout << "dimes: ";
+	cin >> n_dime;
+
+	cout << "quarters: ";
+	cin >> n_quar;
+
+	cout << "half dollars: ";
+	cin >> n_half;
+
+	cout << "dollars: ";
+	cin >> n_doll;
+
+	// accommodating for singular use of word when amount is only 1
+	if(n_penn == 1){
+			cout << "You have " << n_penn << " penny.\n";
+	}
+	else
+			cout << "You have " << n_penn << " pennies.\n";
+	if(n_nick == 1){
+			cout << "You have " << n_nick << " nickel.\n";
+		}
+	else
+			cout << "You have " << n_nick << " nickels.\n";
+	if(n_dime == 1){
+			cout << "You have " << n_dime << " dime.\n";
+		}
+	else
+			cout << "You have " << n_dime << " dimes.\n";
+	if(n_quar == 1){
+			cout << "You have " << n_quar << " quarter.\n";
+		}
+	else
+			cout << "You have " << n_quar << " quarters.\n";
+	if(n_half == 1){
+			cout << "You have " << n_half << " half dollar.\n";
+		}
+	else
+			cout << "You have " << n_half << " half dollars.\n";
+	if(n_doll == 1){
+			cout << "You have " << n_doll << " dollar.\n";
+		}
+	else
+			cout << "You have " << n_doll << " dollars.\n";
+
+	// Want the result in dollars rather than cents
+	double n_total = (n_penn * 0.01) + (n_nick * 0.05) + (n_dime * 0.10) + (n_quar * 0.25) + (n_half * 0.50) + (n_doll * 1.00);
+
+	cout << "The value of all your coins is $" << n_total << "\n";
+
+
+}
