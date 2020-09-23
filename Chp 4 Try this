@@ -1,0 +1,18 @@
+
+#include <iostream>
+
+#include "std_lib_facilities.h"
+
+using namespace std;
+
+// If character a is 97 and b is 98 and so on till z. Write a loop with a table of characters corresponding to integer values
+int main(){
+
+	char x = 'a';
+	int i = 97;
+	while (x<='z') {
+		cout << x << '\t' << i << '\n';
+		++i;
+		++x;
+	}
+}
