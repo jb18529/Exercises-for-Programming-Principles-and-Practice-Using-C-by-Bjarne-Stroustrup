@@ -1,0 +1,26 @@
+// Same as previous try this but with for-statement
+
+int main(){
+
+	cout << "Char" << '\t' << "Integers" << '\n';
+
+	for (char c = 'a'; c<= 'z'; ++c) {
+
+		cout << c << '\t' << int(c)  << '\n';
+	}
+	cout << "\n";
+
+	for (char c = 'A'; c<= 'Z'; ++c) {
+
+		cout << c << '\t' << int(c) << '\n';
+	}
+	cout << "\n";
+
+	for (char c = '0'; c <= '9'; ++c) {
+
+		cout << c << '\t' << int (c) << '\n';
+	}
+
+
+
+}
