@@ -1,0 +1,14 @@
+//Write a program that consists of while loop that each time around the loop reads in two ints and then prints them, exit program when a terminating '|' is entered
+int main() {
+
+	int i = 0;
+	int m = 0;
+	while(cin >> i && cin >> m) {
+		cout << i << '\n';
+		cout << m << '\n';
+
+	return 0;
+
+	}
+
+}
