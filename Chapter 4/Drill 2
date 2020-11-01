@@ -1,0 +1,19 @@
+// Change drill 1 to write out smaller and larger value
+int main() {
+
+	int i = 0;
+	int m = 0;
+	while(cin >> i && cin >> m) {
+
+		if (i<m) {
+			cout << "the smaller value is: " << i << '\n';
+			cout << "the larger value is: " << m << '\n';
+		}
+		else {
+			cout << "the smaller value is: " << m << '\n';
+			cout << "the larger value is: " << i << '\n';
+		}
+
+	}
+
+}
