@@ -1,0 +1,22 @@
+// add in: if the numbers differ by 1 say the numbers are almost equal after printing out which is smaller and larger
+int main() {
+
+	int i = 0;
+	int m = 0;
+	while(cin >> i && cin >> m) {
+
+		if (i<m) {
+			cout << "the smaller value is: " << i << '\n';
+			cout << "the larger value is: " << m << '\n';
+		}
+		else {
+			cout << "the smaller value is: " << m << '\n';
+			cout << "the larger value is: " << i << '\n';
+		}
+
+		if (i-m == 1 || m-i == 1)
+			cout << "the numbers are almost equal";
+
+	}
+
+}
