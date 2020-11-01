@@ -1,0 +1,47 @@
+//Create a program that allows user to enter in list of strings but replaces certain words with "bleep"
+int main() {
+
+
+	vector<string> words;
+	for (string word; cin >> word; )
+		words.push_back(word);
+
+	vector<string> dislikes = { "php", "python", "C#" };
+
+	for(string word:words){
+
+		for (string awful:dislikes) {
+			if (word == awful)
+				word = "bleep";
+
+		}
+
+	cout << word << '\n';
+	}
+
+}
+
+// same aim of program above but uses boolean operation, involves more lines than one above
+int main()
+{
+    vector<string> words;
+    for (string word; cin >> word; )
+        words.push_back(word);
+
+    vector<string> dislikes = { "php", "python", "C#" };
+
+    for (string word : words) {
+        bool bad = false;
+
+        for (string awful : dislikes) {
+            if (word == awful)
+                bad = true;
+        }
+
+        if (bad)
+            cout << "BLEEP!" << '\n';
+        else
+            cout << word << '\n';
+    }
+}
+
