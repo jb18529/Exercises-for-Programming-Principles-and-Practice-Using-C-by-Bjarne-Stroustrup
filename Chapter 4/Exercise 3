@@ -1,0 +1,39 @@
+//Read a sequence of double values into a vector. Think of each value as
+the distance between two cities along a given route. Compute and print the total distance (the sum of all distances). Find and print the smallest and greatest distance between two neighboring cities. Find and print the mean distance between two neighboring cities.
+
+#include "std_lib_facilities.h"
+
+using namespace std;
+
+int main()
+{
+	vector<double> city_distance;
+
+	cout << "Enter in your distances: " << '\n';
+
+	for(double distance; cin>>distance;) {
+		city_distance.push_back(distance);
+	}
+	double sum = 0;
+	for(double x : city_distance) {
+		sum += x;
+	}
+	cout << "The total distance is: " << sum << "\n";
+
+	double mean = sum / city_distance.size();
+
+	cout  << "The average distance is: " << mean << '\n';
+
+	int great = city_distance.size();
+
+	sort(city_distance);
+
+	cout << "The greatest distance is: " << city_distance[great-1] << '\n';
+
+	cout << "The least distance is: " << city_distance[0] << '\n';
+
+
+}
+
+
+
