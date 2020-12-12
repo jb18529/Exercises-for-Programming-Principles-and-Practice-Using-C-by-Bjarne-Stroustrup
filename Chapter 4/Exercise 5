@@ -1,0 +1,58 @@
+#include <iostream>
+
+#include "std_lib_facilities.h"
+
+using namespace std;
+// Simple calculator with add, subtract, multiplication and division features. Practiced using functions.
+
+	double add(double val1, double val2) {
+
+		double answer = val1 + val2;
+		return answer;
+	}
+	double subtract(double val1, double val2) {
+		double answer;
+		if (val1 > val2)
+			answer = val1 - val2;
+		else
+			answer = val2 - val1;
+		return answer;
+	}
+	double multiply(double val1, double val2) {
+		double answer = val1 * val2;
+		return answer;
+	}
+	double divide(double val1, double val2) {
+		double answer = val1/val2;
+		double second = val2/val1;
+		return answer;
+		return second;
+	}
+
+	int main()
+	{
+	double x;
+	double y;
+	char s;
+
+	cout << "Please enter two numbers and the symbol of the operation you want (+, -, *, /): \n";
+	cin >> x >> y >> s;
+
+	if(s == '+') {
+		cout << add(x, y);
+		}
+	else if(s == '-') {
+		cout << subtract(x, y);
+		}
+	else if(s == '*') {
+		cout << multiply(x, y);
+		}
+	else if(s == '/') {
+		cout << divide(x, y);
+		}
+	else
+		cout << "Error you entered an incorrect symbol!\n";
+
+	}
+
+
