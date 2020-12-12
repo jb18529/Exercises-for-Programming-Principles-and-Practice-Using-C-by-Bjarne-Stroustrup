@@ -1,0 +1,49 @@
+#include <iostream>
+
+#include "std_lib_facilities.h"
+
+using namespace std;
+
+//Program that convert a spelled out digit to its numerical equivalent and a numerical digit into its spelled out form
+
+int main()
+{
+    int parsed;
+    string answer = "";
+
+    string num_string = "";
+    int num_digit = 2;
+
+    vector<string> digits_in_strings = { "zero", "one", "two", "three",
+            "four", "five", "six", "seven", "eight", "nine" };
+
+    vector<int> digits_as_digits = { 0, 1, 2, 3, 4, 5, 6,
+            7, 8, 9 };
+    char type = ' ';
+
+    cout << "Choose whether you are entering a number 'n' or word 'w'\n";
+    cin >> type;
+
+    if(type == 'w') {
+    	cout << "Enter your number in word format: ";
+    	cin >> num_string;
+
+    	for(int i = 0; i < digits_in_strings.size(); ++i) {
+    		if(digits_in_strings[i] == num_string)
+    			parsed = i;
+
+    	}
+    cout << parsed << '\n';
+    }
+    else if(type == 'n') {
+    	cout << "Enter your number in numerical format: ";
+    	cin >> num_digit;
+
+    	for (int j = 0; j < digits_as_digits.size(); ++j) {
+    		if (digits_as_digits[j] == num_digit)
+    			answer = digits_in_strings[j];
+    	}
+    cout << answer << '\n';
+    }
+
+}
