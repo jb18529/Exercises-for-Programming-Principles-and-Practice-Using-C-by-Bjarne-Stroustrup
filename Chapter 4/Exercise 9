@@ -1,0 +1,18 @@
+
+
+int main(){
+	int square = 1; // # of square
+	int rice = 1; // # of rice on square
+	int total = 0; // # of rice in total
+
+
+	while(square < 64) {
+		rice *= 2;
+		++square;
+		total += rice;
+		cout << square << " " << rice << " " << total << '\n';
+	}
+
+		cout << "Number of grains of rice: " << rice << '\n' << "Number of squares: " << square << '\n';
+
+}
