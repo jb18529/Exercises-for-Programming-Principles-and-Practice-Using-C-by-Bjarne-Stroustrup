@@ -9,8 +9,8 @@ using namespace std;
 int archaic_square(int v) {
     int total = 0;
 
-    for (int i = 0; i < v; ++i) {
-        total += v;
+    for (int i = 0; i < v; ++i) { // this loop simply uses the mathematical idea that 2^2 = 2+2, 3^2 = 3+3+3, 4^2 = 4+4+4+4. So the loop iterates less than v which will always be 1 above the number of times you need iteration as int i starts from 0. 
+        total += v; //is like adding the input v-1 number of times.
     }
 
     return total;
@@ -21,4 +21,25 @@ int main()
     for (int i = 0; i < 100; ++i) {
         cout << i << '\t' << archaic_square(i) << '\n';
     }
+}
+
+
+// Alternative:
+
+int archaic_square(int v) {
+	int total = 0;
+
+	for (int i = 1; i <= v; ++i) { 
+		total += v;
+
+	}
+
+return total;
+}
+
+int main()
+{
+	for (int i = 0; i < 100; ++i) {
+		cout << i << '\t' << archaic_square(i) << '\n';
+	}
 }
