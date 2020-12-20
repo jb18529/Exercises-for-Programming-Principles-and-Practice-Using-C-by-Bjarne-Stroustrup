@@ -31,7 +31,7 @@ int archaic_square(int v) {
 
 	for (int i = 1; i <= v; ++i) { 
 		total += v;
-
+ 
 	}
 
 return total;
